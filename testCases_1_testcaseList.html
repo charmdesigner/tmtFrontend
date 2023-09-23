@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+      <title>Test Management Tool</title>
+      <!-- css -->
+      <link href="css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+         rel="stylesheet" />
+      <link href="css/slick.css" rel="stylesheet" />
+      <link href="css/responsive.css" rel="stylesheet" />
+      <link href="css/style.css" rel="stylesheet" />
+   </head>
+   <body>
+      <div class="dashboard_page dashboard_lane requirement">
+         <div class="sidebar">
+            <div class="sidebar_top">
+               <div class="pro_title">
+                  <div class="img">
+                     <img src="images/play_img.jpg" alt="" />
+                  </div>
+                  <div class="name">
+                     <h5>Sample Project</h5>
+                     <p>Category</p>
+                  </div>
+               </div>
+               <div class="side-menu-container">
+                  <ul class="nav navbar-nav">
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+                           </svg>
+                           Dashboard 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z" />
+                           </svg>
+                           Sprint Board 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" />
+                           </svg>
+                           Backlog 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M4 5v13h17V5H4zm10 2v3.5h-3V7h3zM6 7h3v3.5H6V7zm0 9v-3.5h3V16H6zm5 0v-3.5h3V16h-3zm8 0h-3v-3.5h3V16zm-3-5.5V7h3v3.5h-3z" />
+                           </svg>
+                           Module 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                           </svg>
+                           Wiki 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5c0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4c0-2.05 1.53-3.76 3.56-3.97l1.07-.11l.5-.95A5.469 5.469 0 0 1 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5l1.53.11A2.98 2.98 0 0 1 22 15c0 1.65-1.35 3-3 3zM8 13h2.55v3h2.9v-3H16l-4-4z" />
+                           </svg>
+                           Documents 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z" />
+                              <path d="M7 12h2v5H7zm8-5h2v10h-2zm-4 7h2v3h-2zm0-4h2v2h-2z" />
+                           </svg>
+                           Requirements 
+                        </a>
+                     </li>
+                     <li class="active">
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" />
+                           </svg>
+                           Test Cases 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path d="M15.5 5H11l5 7l-5 7h4.5l5-7z" />
+                              <path d="M8.5 5H4l5 7l-5 7h4.5l5-7z" />
+                           </svg>
+                           Test Run 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path d="M16 6l2.29 2.29l-4.88 4.88l-4-4L2 16.59L3.41 18l6-6l4 4l6.3-6.29L22 12V6h-6z" />
+                           </svg>
+                           Reports 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M20 8h-2.81a5.985 5.985 0 0 0-1.82-1.96L17 4.41L15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3L7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-4 4v3c0 .22-.03.47-.07.7l-.1.65l-.37.65c-.72 1.24-2.04 2-3.46 2s-2.74-.77-3.46-2l-.37-.64l-.1-.65A4.27 4.27 0 0 1 8 15v-4c0-.23.03-.48.07-.7l.1-.65l.37-.65c.3-.52.72-.97 1.21-1.31l.57-.39l.74-.18a3.787 3.787 0 0 1 1.89 0l.68.16l.61.42c.5.34.91.78 1.21 1.31l.38.65l.1.65c.04.22.07.47.07.69v1zm-6 2h4v2h-4zm0-4h4v2h-4z" />
+                           </svg>
+                           Defects 
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="side-menu-container">
+                  <ul class="nav navbar-nav">
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M15 7v12.97l-4.21-1.81l-.79-.34l-.79.34L5 19.97V7h10m4-6H8.99C7.89 1 7 1.9 7 3h10c1.1 0 2 .9 2 2v13l2 1V3c0-1.1-.9-2-2-2zm-4 4H5c-1.1 0-2 .9-2 2v16l7-3l7 3V7c0-1.1-.9-2-2-2z" />
+                           </svg>
+                           Bookmarks 
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg class="w-6 h-6" fill="#686583" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24">
+                              <path
+                                 d="M19.43 12.98c.04-.32.07-.64.07-.98c0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.566.566 0 0 0-.18-.03c-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98c0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46a.5.5 0 0 0 .61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03c.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73c0 .21-.02.43-.05.73l-.14 1.13l.89.7l1.08.84l-.7 1.21l-1.27-.51l-1.04-.42l-.9.68c-.43.32-.84.56-1.25.73l-1.06.43l-.16 1.13l-.2 1.35h-1.4l-.19-1.35l-.16-1.13l-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7l-1.06.43l-1.27.51l-.7-1.21l1.08-.84l.89-.7l-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13l-.89-.7l-1.08-.84l.7-1.21l1.27.51l1.04.42l.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43l.16-1.13l.2-1.35h1.39l.19 1.35l.16 1.13l1.06.43c.43.18.83.41 1.23.71l.91.7l1.06-.43l1.27-.51l.7 1.21l-1.07.85l-.89.7l.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2z" />
+                           </svg>
+                           Settings 
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="sidebar_btn">
+               <div class="invite_member">
+                  <a href="#" class="button">
+                  <img src="images/add_icon.svg" alt="" />Invite new member </a>
+               </div>
+            </div>
+         </div>
+         <div class="dashboard_sec sprint_board">
+            <div class="dashboard-top-sticky">
+               <div class="profile_bar">
+                  <div class="input-group">
+                     <button type="button">
+                     <i class="fas fa-search"></i>
+                     </button>
+                     <div class="form-outline">
+                        <input type="search" id="form1" class="form-control" placeholder="Search" />
+                     </div>
+                  </div>
+                  <div class="pro_right">
+                     <div class="question">
+                        <a href="#">
+                        <img src="images/remix-question.png" alt="" />
+                        </a>
+                     </div>
+                     <div class="notification">
+                        <a href="#">
+                        <img src="images/material-notifications.svg" alt="" />
+                        </a>
+                     </div>
+                     <div class="profile_icon">
+                        <a href="#">
+                        <img src="images/I.jpg" />
+                        </a>
+                     </div>
+                     <button type="button" class="hamburger-menu"></button>
+                  </div>
+               </div>
+               <div class="sprint_b_sec backlog_b_sec">
+                  <div class="titie">
+                     <h1>Test Cases</h1>
+                  </div>
+                  <div class="dash_bar">
+                     <div class="dash_l">
+                        <a class="menu_icon" href="#">
+                        <img src="images/menu.svg" alt="">
+                        </a>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected="">All Items</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected="">By Requirement Type</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="dash_r"></div>
+                  </div>
+                  <hr />
+               </div>
+            </div>
+            <div class="all_module requirement_module testcase_module">
+               <div class="module_wrapper">
+                  <div class="flex_column">
+                     <div class="module_box">
+                        <div class="title">
+                           <h6>Modules<span>(3)</span><a href="#"><img src="images/material-create.svg" alt="" /></a></h6>
+                           <div class="icon">
+                              <a href="#"><img src="images/add_icon.svg" alt="" /></a>
+                              <a href="#"><img src="images/material-delete.svg" alt="" /></a>
+                           </div>
+                        </div>
+                        <div class="input-group ">
+                           <button type="button">
+                           <i class="fas fa-search"></i>
+                           </button>
+                           <div class="form-outline">
+                              <input type="search" id="form1" class="form-control" placeholder="Search by Requirement Type">
+                           </div>
+                        </div>
+                        <div class="list_view">
+                           <ul id="toggle">
+                              <li class="menu-item-has-children mesmo active">
+                                 <a href="#"><img src="images/left-arrow-active.svg" alt="" /><img src="images/folder_active.svg" />Web App</a>
+                                 <ul class="sub-menu">
+                                    <li class="sd-child">
+                                       <a href="#"><img src="images/folder.svg" />Login</a>
+                                       <ul class="sd-level">
+                                          <li><a href="#"><img src="images/folder.svg" />Admin Login</a></li>
+                                          <li><a href="#"><img src="images/folder.svg" />Customer Login</a></li>
+                                          <li><a href="#"><img src="images/folder.svg" />Agent Login</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="images/folder.svg" />Home</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="images/folder.svg" />Accounts</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="images/folder.svg" />Cards</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="images/folder.svg" />Loans</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="images/folder.svg" />Service Request</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"><img src="images/folder.svg" />Logout</a>
+                                    </li>
+                                 </ul>
+                                 <div class="hover_wrap">
+                                    <div class="hover_icon">
+                                       <a href="#"><img src="images/material-create.svg" alt=""></a>
+                                       <a href="#"><img src="images/add_icon.svg" alt=""></a>
+                                       <a href="#"><img src="images/material-delete.svg" alt=""></a>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <img src="images/left-arrow-black.svg" alt="" /><a href="#"><img src="images/folder.svg" />Mobile App - Andriod</a>
+                                 <div class="hover_wrap">
+                                    <div class="hover_icon">
+                                       <a href="#"><img src="images/material-create.svg" alt=""></a>
+                                       <a href="#"><img src="images/add_icon.svg" alt=""></a>
+                                       <a href="#"><img src="images/material-delete.svg" alt=""></a>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <img src="images/left-arrow.svg" alt="" /><a href="#"><img src="images/folder.svg" />Mobile App - IOS</a>
+                                 <div class="hover_wrap">
+                                    <div class="hover_icon">
+                                       <a href="#"><img src="images/material-create.svg" alt=""></a>
+                                       <a href="#"><img src="images/add_icon.svg" alt=""></a>
+                                       <a href="#"><img src="images/material-delete.svg" alt=""></a>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="flex_column">
+                     <div class="module_box">
+                        <div class="title">
+                           <h6>Admin Login<span>(3)</span><a href="#"><img src="images/material-create.svg" alt="" /></a></h6>
+                           <div class="filter">
+                              <div class="input-group ">
+                                 <button type="button">
+                                 <i class="fas fa-search"></i>
+                                 </button>
+                                 <div class="form-outline">
+                                    <input type="search" id="form1" class="form-control" placeholder="Search by Description">
+                                 </div>
+                              </div>
+                              <button type="button" class="add_lane button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                              <img src="images/add_sign.svg" alt="">Add </button>
+                              <button type="button" class="archive button">
+                              <img src="images/archive.png" alt="">Archive</button>
+                              <button type="button" class="delete button">
+                              <img src="images/delete.svg" alt="">Delete </button>
+                           </div>
+                        </div>
+                        <div class="pagination_bar">
+                           <div class="l_select_div">
+                              Show
+                              <select class="form-select" aria-label="Default select example">
+                                 <option selected="">10</option>
+                                 <option value="1">One</option>
+                                 <option value="2">Two</option>
+                                 <option value="3">Three</option>
+                              </select>
+                              entries
+                           </div>
+                           <div class="r_pagination">
+                              <div class="filter">
+                                 <a class="my_items" href="#">
+                                 <img src="images/download.svg" alt="">Download </a>
+                                 <a class="my_items" href="#">
+                                 <img src="images/import_icon.svg" alt="">Upload </a>
+                              </div>
+                              <div class="select_div">
+                                 Sort
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected="">Test Case ID</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected="">Desc</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                              </div>
+                              <nav aria-label="Page navigation example">
+                                 <ul class="pagination">
+                                    <li class="page-item"><a class="page-link prev" href="#"><img src="images/prev_icon.svg" alt=""/></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link next" href="#"><img src="images/next_icon.svg" alt="" /></a></li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                        <div class="table-responsive">
+                           <table class="table" id="dtBasicExample" cellspacing="0" width="100%">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="autoSizingCheck1" >
+                                          <label class="form-check-label" for="autoSizingCheck1">
+                                          </label>
+                                       </div>
+                                    </th>
+                                    <th scope="col">Test Case ID</th>
+                                    <th scope="col">Test Type</th>
+                                    <th scope="col">Test Case Name </th>
+                                    <th scope="col">Created Date </th>
+                                    <th scope="col">Updated Date </th>
+                                    <th scope="col">Actions </th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                          <label class="form-check-label" for="autoSizingCheck2">
+                                          </label>
+                                       </div>
+                                    </td>
+                                    <td>TC001 </td>
+                                    <td> Functional  </td>
+                                    <td><a href="#">Admin Login Positive Test</a></td>
+                                    <td>02/Jan/2023 </td>
+                                    <td>04/Jan/2023 </td>
+                                    <td class="action_icon">
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M12 6.5a9.77 9.77 0 0 1 8.82 5.5c-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12A9.77 9.77 0 0 1 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5a2.5 2.5 0 0 1 0 5a2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5s4.5-2.02 4.5-4.5s-2.02-4.5-4.5-4.5z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06l.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83l3.75 3.75l1.83-1.83a.996.996 0 0 0 0-1.41z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#F22128FF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                          </svg>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="autoSizingCheck3" >
+                                          <label class="form-check-label" for="autoSizingCheck3">
+                                          </label>
+                                       </div>
+                                    </td>
+                                    <td>TC002 </td>
+                                    <td> Regression </td>
+                                    <td><a href="#">Admin Login Error </a></td>
+                                    <td>02/Jan/2023 </td>
+                                    <td>04/Jan/2023 </td>
+                                    <td class="action_icon">
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M12 6.5a9.77 9.77 0 0 1 8.82 5.5c-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12A9.77 9.77 0 0 1 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5a2.5 2.5 0 0 1 0 5a2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5s4.5-2.02 4.5-4.5s-2.02-4.5-4.5-4.5z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06l.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83l3.75 3.75l1.83-1.83a.996.996 0 0 0 0-1.41z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#F22128FF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                          </svg>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="autoSizingCheck4">
+                                          <label class="form-check-label" for="autoSizingCheck4">
+                                          </label>
+                                       </div>
+                                    </td>
+                                    <td>TC003</td>
+                                    <td>Sanity</td>
+                                    <td><a href="#">Login Page design - user name requirement for IOS</a></td>
+                                    <td>02/Jan/2023</td>
+                                    <td>04/Jan/2023</td>
+                                    <td class="action_icon">
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M12 6.5a9.77 9.77 0 0 1 8.82 5.5c-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12A9.77 9.77 0 0 1 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5a2.5 2.5 0 0 1 0 5a2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5s4.5-2.02 4.5-4.5s-2.02-4.5-4.5-4.5z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06l.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83l3.75 3.75l1.83-1.83a.996.996 0 0 0 0-1.41z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#2466EBFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"/>
+                                          </svg>
+                                       </a>
+                                       <a href="#">
+                                          <svg class="w-6 h-6" fill="#F22128FF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                             <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                          </svg>
+                                       </a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal item view fade testcase_modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="task_name">
+                  <div class="title">
+                     <p><strong>TC id: <span>PRJTC231</span></strong></p>
+                     <p><strong>Web App > Login > Admin Login > TC001</strong></p>
+                  </div>
+                  <div class="select_div">
+                     <label>Item Type</label>
+                     <select class="form-select" aria-label="Default select example">
+                        <option selected>Test Case</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form-row">
+                  <label>Test Case Name<span class="req">*</span></label>
+                  <input type="text" placeholder="Admin Login Positive Test">
+               </div>
+               <div class="d_flex">
+                  <div class="l_col">
+                     <div class="select_div">
+                        <label>Priority</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected>High</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="tab_btn">
+                        <label>Label</label>
+                        <div class="tabs">
+                           <a href="#" class="orange">Web UI</a>
+                           <a href="#" class="blue">API</a>
+                           <a href="#" class="green">Chrome</a>
+                           <a href="#" class="l_blue">DB</a>
+                           <a href="#" class="add_label"><img src="images/add_sign.svg" alt="">Add label</a>
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <label>Created date</label>
+                        <p>Jan 04, 2022</p>
+                     </div>
+                     <div class="form-row">
+                        <label>Updated date</label>
+                        <p>Jan 04, 2022</p>
+                     </div>
+                     <div class="select_div">
+                        <label>Affected Version</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected>IOS Mobile v 1.2</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="l_col">
+                     <div class="select_div">
+                        <label>Status</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected>New</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="form-row">
+                        <label>Assigned to</label>
+                        <p>James Green</p>
+                     </div>
+                     <div class="form-row">
+                        <label>Created by</label>
+                        <p>James Green</p>
+                     </div>
+                     <div class="form-row">
+                        <label>Updated by</label>
+                        <p>Emma Willis </p>
+                     </div>
+                     <div class="select_div">
+                        <label>Components</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected>UI</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="select_div">
+                        <label>Test type</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected>Functional</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Linked Requirements </div>
+                  <div class="wrap">
+                     <a href="#">RA001</a>
+                     <a class="add_label">
+                        <svg class="w-6 h-6" fill="#9095A0FF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                        </svg>
+                        Link Requirements
+                     </a>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Linked Task </div>
+                  <div class="wrap">
+                     <a href="#">TA001</a>
+                     <a class="add_label">
+                        <svg class="w-6 h-6" fill="#9095A0FF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                        </svg>
+                        Link Task
+                     </a>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Related Test Cases</div>
+                  <div class="wrap">
+                     <a href="#">TC001</a>
+                     <a class="add_label">
+                        <svg class="w-6 h-6" fill="#9095A0FF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                        </svg>
+                        Link Test Cases
+                     </a>
+                  </div>
+                  <div class="wrap">
+                     <a href="#">TC002</a>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Linked Defects</div>
+                  <div class="wrap">
+                     <a href="#">BUG001 Issue with UI </a>
+                     <a class="add_label">
+                        <svg class="w-6 h-6" fill="#9095A0FF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                        </svg>
+                        Link Defects
+                     </a>
+                     <a href="#" class="add_label">Closed</a>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Attachments</div>
+                  <div class="wrap">
+                     <a class="add_label file"><img src="images/attach-file.png" alt="" />Requirements.docx</a>
+                     <a class="add_label file" href="#"><img src="images/import_icon.svg" alt="">Attach Files</a>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Test Description</div>
+                  <div class="centered">
+                     <div id="editor">
+                        <p><strong>Should have User name and Password text fields.</strong></p>
+                        <p><strong>2 Buttons with Login and cancel buttons</strong></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Pre Conditions</div>
+                  <div class="centered">
+                     <div id="editor1">
+                        <p><strong>Should have access to application</strong></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="link_box">
+                  <div class="title">Test Details</div>
+                  <div class="table-responsive">
+                     <table class="table" id="dtBasicExample" cellspacing="0" width="100%">
+                        <thead>
+                           <tr>
+                              <th scope="col">No</th>
+                              <th scope="col">Test Step</th>
+                              <th scope="col">Expected result</th>
+                              <th scope="col">Test Data</th>
+                              <th scope="col">Actions</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>1</td>
+                              <td> <textarea>Open a browser and enter the URL for the Login screen.</textarea></td>
+                              <td><textarea>The Login screen should be displayed.</textarea></td>
+                              <td><textarea>user id: test user 
+                                 pwd: test</textarea>
+                              </td>
+                              <td class="action_icon">
+                                 <a href="#"><img src="images/file-copy.svg" alt=""></a>
+                                 <a href="#"><img src="images/delete-forever.svg" alt="" /></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>2</td>
+                              <td> <textarea>Install the app in Android phone and open it.</textarea></td>
+                              <td><textarea>The Login screen should be displayed.</textarea></td>
+                              <td><textarea></textarea></td>
+                              <td class="action_icon">
+                                 <a href="#"><img src="images/file-copy.svg" alt=""></a>
+                                 <a href="#"><img src="images/delete-forever.svg" alt="" /></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>3</td>
+                              <td> <textarea>Open the Login screen and check the texts available are correctly spelled.</textarea></td>
+                              <td><textarea>‘User Name’ & ‘Password’ text should be displayed before the related text box. Login button should have the caption ‘Login’. ‘Forgot Password?’ And ‘Registration’ should be available as Links.</textarea></td>
+                              <td><textarea></textarea></td>
+                              <td class="action_icon">
+                                 <a href="#"><img src="images/file-copy.svg" alt=""></a>
+                                 <a href="#"><img src="images/delete-forever.svg" alt="" /></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>4</td>
+                              <td> <textarea></textarea></td>
+                              <td><textarea></textarea></td>
+                              <td><textarea></textarea></td>
+                              <td class="action_icon">
+                                 <a href="#"><img src="images/file-copy.svg" alt=""></a>
+                                 <a href="#"><img src="images/delete-forever.svg" alt="" /></a>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="btn_wrap">
+                  <button class="button cancel">Cancel</button>
+                  <button class="button">Save</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- JavaScript -->
+      <script src="js/jquery-3.6.4.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/ckeditor.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+           $(".hamburger-menu").click(function () {
+             $(".sidebar").toggleClass("active", 5000);
+             $(".hamburger-menu").toggleClass("close", 5000);
+           });
+         });
+         ///////////////////////////
+         // $(document).ready(function(){
+         $(".sub-menu").hide();
+         $('#toggle > li.menu-item-has-children > a').click(function () {
+           var $ul = $(this).siblings('ul');
+           if ($ul.length > 0) {
+               $ul.slideToggle(600).css("background-color","#fff");
+               $(".sub-menu").not($ul).slideUp(400);
+               return false;
+           }
+         });
+         ////////////////////////////
+         ClassicEditor.create(document.querySelector("#editor"), {
+           toolbar: [ 'bold', 'italic','link','heading', 'numberedList', 'bulletedList' ]
+         
+         })
+           .then((editor) => {
+             window.editor = editor;
+           })
+           .catch((err) => {
+             console.error(err.stack);
+           });
+         
+           //////////////////////////
+         
+           ClassicEditor.create(document.querySelector("#editor1"), {
+           toolbar: [ 'bold', 'italic','link','heading', 'numberedList', 'bulletedList' ]
+         
+         })
+           .then((editor) => {
+             window.editor = editor;
+           })
+           .catch((err) => {
+             console.error(err.stack);
+           });
+         
+      </script>
+   </body>
+</html>
